@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="Cardlink_Mobile_Payments_SDK" customModuleProvider="target">
+            <connections>
+                <outlet property="cardDate" destination="s9g-LQ-ujN" id="9k3-Xl-C1W"/>
+                <outlet property="cardFront" destination="A5t-n5-beN" id="PCm-8N-TpD"/>
+                <outlet property="cardFrontColor" destination="jGr-dx-ia4" id="L5Q-wr-9Oy"/>
+                <outlet property="cardFrontGlare" destination="vaK-mQ-xOw" id="FCb-oG-9Pt"/>
+                <outlet property="cardFrontLogo" destination="Mit-7V-si2" id="iA4-wz-B56"/>
+                <outlet property="cardFrontShadow" destination="kNx-Em-Aa2" id="WN5-ck-wHS"/>
+                <outlet property="cardName" destination="hGK-Ma-fb2" id="6nH-AT-wrf"/>
+                <outlet property="cardPan" destination="L30-p3-Qx5" id="eTF-3d-0Pk"/>
+                <outlet property="cardRear" destination="Kn3-6W-CaF" id="Uwq-tC-vmV"/>
+                <outlet property="cardRearCVV" destination="AjZ-uY-58z" id="9HD-fY-cXO"/>
+                <outlet property="cardRearColor" destination="9wl-X8-Q6T" id="9ep-dR-CCp"/>
+                <outlet property="cardRearGlare" destination="Yq6-99-V07" id="Yba-aU-Fdb"/>
+                <outlet property="cardRearLogo" destination="cqt-ao-lcI" id="I8H-Xj-uzC"/>
+                <outlet property="cardRearShadow" destination="fFP-JT-hZ9" id="9Ee-xm-jML"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SRY-wd-Qdf" userLabel="Card">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view hidden="YES" autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kn3-6W-CaF" userLabel="Rear">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9wl-X8-Q6T" userLabel="Color" customClass="CornerRadiusPercentView" customModule="Cardlink_Mobile_Payments_SDK" customModuleProvider="target">
+                            <rect key="frame" x="15" y="12.333333333333343" width="360" height="262"/>
+                        </view>
+                        <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ic_glare" translatesAutoresizingMaskIntoConstraints="NO" id="Yq6-99-V07" userLabel="Glare">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="300"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Yq6-99-V07" secondAttribute="height" multiplier="309:190" id="xYj-jp-NLM"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqt-ao-lcI" userLabel="Logo">
+                            <rect key="frame" x="210.66666666666663" y="130.33333333333334" width="136.33333333333337" height="108.33333333333334"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVN-DD-eTK" userLabel="Stripe">
+                            <rect key="frame" x="15.666666666666657" y="52.666666666666657" width="358.66666666666674" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbG-3X-WaX" userLabel="CVV container">
+                            <rect key="frame" x="32.666666666666657" y="116.33333333333331" width="195" height="45"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AjZ-uY-58z">
+                                    <rect key="frame" x="18.333333333333329" y="0.0" width="207.33333333333337" height="45"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="44"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="AjZ-uY-58z" firstAttribute="width" secondItem="WbG-3X-WaX" secondAttribute="width" multiplier="0.85" id="3xT-GB-Pyc"/>
+                                <constraint firstItem="AjZ-uY-58z" firstAttribute="top" secondItem="WbG-3X-WaX" secondAttribute="top" id="cwh-Wz-Dp5"/>
+                                <constraint firstAttribute="bottom" secondItem="AjZ-uY-58z" secondAttribute="bottom" id="hJ4-9i-eAq"/>
+                                <constraint firstItem="AjZ-uY-58z" firstAttribute="centerX" secondItem="WbG-3X-WaX" secondAttribute="centerX" id="nBS-VE-eDT"/>
+                            </constraints>
+                        </view>
+                        <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFP-JT-hZ9" userLabel="Shadow" customClass="CornerRadiusPercentView" customModule="Cardlink_Mobile_Payments_SDK" customModuleProvider="target">
+                            <rect key="frame" x="15" y="12.333333333333343" width="360" height="262"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.68000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="NVN-DD-eTK" firstAttribute="right" secondItem="Yq6-99-V07" secondAttribute="right" multiplier="0.96" id="0St-h3-6EY"/>
+                        <constraint firstItem="9wl-X8-Q6T" firstAttribute="trailing" secondItem="fFP-JT-hZ9" secondAttribute="trailing" id="2VT-dh-46b"/>
+                        <constraint firstItem="cqt-ao-lcI" firstAttribute="centerY" secondItem="Yq6-99-V07" secondAttribute="centerY" multiplier="1.23:1" id="3yE-kt-6RD"/>
+                        <constraint firstItem="NVN-DD-eTK" firstAttribute="width" secondItem="Yq6-99-V07" secondAttribute="width" multiplier="0.92" id="4Nq-DG-liF"/>
+                        <constraint firstAttribute="bottom" secondItem="Yq6-99-V07" secondAttribute="bottom" id="5Hr-Qo-ff3"/>
+                        <constraint firstItem="9wl-X8-Q6T" firstAttribute="bottom" secondItem="fFP-JT-hZ9" secondAttribute="bottom" id="9Jg-uG-uew"/>
+                        <constraint firstItem="NVN-DD-eTK" firstAttribute="height" secondItem="Yq6-99-V07" secondAttribute="height" multiplier="0.15" id="Dae-Zn-tk0"/>
+                        <constraint firstItem="WbG-3X-WaX" firstAttribute="centerY" secondItem="Yq6-99-V07" secondAttribute="centerY" multiplier="1:1.08" id="Hcz-M5-JXg"/>
+                        <constraint firstItem="Yq6-99-V07" firstAttribute="centerX" secondItem="Kn3-6W-CaF" secondAttribute="centerX" id="KLj-WX-jSN"/>
+                        <constraint firstItem="WbG-3X-WaX" firstAttribute="centerX" secondItem="Yq6-99-V07" secondAttribute="centerX" multiplier="1:1.5" id="L03-yi-Raq"/>
+                        <constraint firstItem="fFP-JT-hZ9" firstAttribute="centerY" secondItem="Yq6-99-V07" secondAttribute="centerY" multiplier="0.956" id="OEu-HT-Ex1"/>
+                        <constraint firstItem="fFP-JT-hZ9" firstAttribute="height" secondItem="Yq6-99-V07" secondAttribute="height" multiplier="0.873" id="OqP-y3-CDS"/>
+                        <constraint firstItem="Yq6-99-V07" firstAttribute="top" secondItem="Kn3-6W-CaF" secondAttribute="top" id="RZx-qW-JSN"/>
+                        <constraint firstItem="WbG-3X-WaX" firstAttribute="width" secondItem="Yq6-99-V07" secondAttribute="width" multiplier="0.5" id="TJn-kK-oz3"/>
+                        <constraint firstItem="fFP-JT-hZ9" firstAttribute="centerX" secondItem="Yq6-99-V07" secondAttribute="centerX" id="VdT-xZ-4xg"/>
+                        <constraint firstItem="cqt-ao-lcI" firstAttribute="width" secondItem="cqt-ao-lcI" secondAttribute="height" multiplier="250:159" id="XwB-0v-f8R"/>
+                        <constraint firstItem="cqt-ao-lcI" firstAttribute="width" secondItem="Yq6-99-V07" secondAttribute="width" multiplier="0.35" id="YX8-S5-tK5"/>
+                        <constraint firstItem="9wl-X8-Q6T" firstAttribute="leading" secondItem="fFP-JT-hZ9" secondAttribute="leading" id="d9N-if-2cd"/>
+                        <constraint firstItem="cqt-ao-lcI" firstAttribute="centerX" secondItem="Yq6-99-V07" secondAttribute="centerX" multiplier="1.43:1" id="hWy-Zp-oam"/>
+                        <constraint firstItem="Yq6-99-V07" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Kn3-6W-CaF" secondAttribute="leading" id="hqd-dN-YHp"/>
+                        <constraint firstItem="fFP-JT-hZ9" firstAttribute="width" secondItem="Yq6-99-V07" secondAttribute="width" multiplier="0.923" id="j7M-Df-vtb"/>
+                        <constraint firstItem="NVN-DD-eTK" firstAttribute="centerY" secondItem="Yq6-99-V07" secondAttribute="centerY" multiplier="1:2" id="myb-r0-7tt"/>
+                        <constraint firstItem="WbG-3X-WaX" firstAttribute="height" secondItem="NVN-DD-eTK" secondAttribute="height" id="vbs-FQ-fKP"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Yq6-99-V07" secondAttribute="trailing" id="w2J-gh-ZTB"/>
+                        <constraint firstItem="9wl-X8-Q6T" firstAttribute="top" secondItem="fFP-JT-hZ9" secondAttribute="top" id="ypf-Hg-z2s"/>
+                    </constraints>
+                </view>
+                <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5t-n5-beN" userLabel="Front">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jGr-dx-ia4" userLabel="Color" customClass="CornerRadiusPercentView" customModule="Cardlink_Mobile_Payments_SDK" customModuleProvider="target">
+                            <rect key="frame" x="15" y="12.333333333333343" width="360" height="262"/>
+                        </view>
+                        <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ic_glare" translatesAutoresizingMaskIntoConstraints="NO" id="vaK-mQ-xOw" userLabel="Glare">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="300"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="vaK-mQ-xOw" secondAttribute="height" multiplier="309:190" id="pZB-1m-krk"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mit-7V-si2" userLabel="Logo">
+                            <rect key="frame" x="41.333333333333329" y="52.999999999999993" width="136.33333333333337" height="108.33333333333331"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Mit-7V-si2" secondAttribute="height" multiplier="250:159" id="Czf-qD-hNL"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="y9c-St-dk7">
+                            <rect key="frame" x="0.0" y="153" width="390" height="66"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="•••• •••• •••• ••••" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="L30-p3-Qx5">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="66"/>
+                                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="44"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="2Zj-wV-al5">
+                            <rect key="frame" x="36" y="86.999999999999915" width="502" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hGK-Ma-fb2" userLabel="Cardholder">
+                            <rect key="frame" x="-0.33333333333334281" y="219" width="289.66666666666674" height="27"/>
+                            <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="780" text="••/••" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="s9g-LQ-ujN">
+                            <rect key="frame" x="299.33333333333331" y="219" width="87.666666666666686" height="27"/>
+                            <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kNx-Em-Aa2" userLabel="Shadow" customClass="CornerRadiusPercentView" customModule="Cardlink_Mobile_Payments_SDK" customModuleProvider="target">
+                            <rect key="frame" x="15" y="12.333333333333343" width="360" height="262"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.68000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="y9c-St-dk7" firstAttribute="width" secondItem="vaK-mQ-xOw" secondAttribute="width" multiplier="0.8" id="07w-GQ-jtJ"/>
+                        <constraint firstItem="kNx-Em-Aa2" firstAttribute="centerY" secondItem="vaK-mQ-xOw" secondAttribute="centerY" multiplier="0.956" id="131-4E-DFB"/>
+                        <constraint firstItem="Mit-7V-si2" firstAttribute="centerX" secondItem="vaK-mQ-xOw" secondAttribute="centerX" multiplier="1:1.78" id="3rB-sJ-MnV"/>
+                        <constraint firstItem="jGr-dx-ia4" firstAttribute="leading" secondItem="kNx-Em-Aa2" secondAttribute="leading" id="4RQ-MJ-Nrl"/>
+                        <constraint firstItem="y9c-St-dk7" firstAttribute="bottom" secondItem="vaK-mQ-xOw" secondAttribute="bottom" multiplier="0.73" id="5Zt-e1-Drb"/>
+                        <constraint firstItem="Mit-7V-si2" firstAttribute="centerY" secondItem="vaK-mQ-xOw" secondAttribute="centerY" multiplier="1:1.4" id="5lb-tr-QZW"/>
+                        <constraint firstItem="kNx-Em-Aa2" firstAttribute="height" secondItem="vaK-mQ-xOw" secondAttribute="height" multiplier="0.873" id="8RO-EV-Ijs"/>
+                        <constraint firstItem="kNx-Em-Aa2" firstAttribute="centerX" secondItem="vaK-mQ-xOw" secondAttribute="centerX" id="9cQ-t8-ll4"/>
+                        <constraint firstItem="Mit-7V-si2" firstAttribute="width" secondItem="vaK-mQ-xOw" secondAttribute="width" multiplier="0.35" id="AKJ-Zi-66a"/>
+                        <constraint firstItem="s9g-LQ-ujN" firstAttribute="top" secondItem="y9c-St-dk7" secondAttribute="bottom" id="AVo-Y9-dYT"/>
+                        <constraint firstItem="s9g-LQ-ujN" firstAttribute="width" secondItem="vaK-mQ-xOw" secondAttribute="width" multiplier="0.18" id="Ae4-g9-6jZ"/>
+                        <constraint firstItem="jGr-dx-ia4" firstAttribute="bottom" secondItem="kNx-Em-Aa2" secondAttribute="bottom" id="Gg5-ya-tFo"/>
+                        <constraint firstItem="vaK-mQ-xOw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="A5t-n5-beN" secondAttribute="leading" id="JeZ-dW-UV9"/>
+                        <constraint firstItem="jGr-dx-ia4" firstAttribute="top" secondItem="kNx-Em-Aa2" secondAttribute="top" id="Nfr-Mj-3Gm"/>
+                        <constraint firstItem="s9g-LQ-ujN" firstAttribute="right" secondItem="y9c-St-dk7" secondAttribute="right" multiplier="0.992" id="Rcy-3X-a1I"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vaK-mQ-xOw" secondAttribute="trailing" id="VG4-iw-g4O"/>
+                        <constraint firstAttribute="bottom" secondItem="vaK-mQ-xOw" secondAttribute="bottom" id="VHh-VL-xeg"/>
+                        <constraint firstItem="y9c-St-dk7" firstAttribute="height" secondItem="vaK-mQ-xOw" secondAttribute="height" multiplier="0.22" id="Vcu-Gd-6Y5"/>
+                        <constraint firstItem="vaK-mQ-xOw" firstAttribute="bottom" secondItem="hGK-Ma-fb2" secondAttribute="bottom" multiplier="1.22" id="Wdc-bf-5cn"/>
+                        <constraint firstItem="kNx-Em-Aa2" firstAttribute="width" secondItem="vaK-mQ-xOw" secondAttribute="width" multiplier="0.923" id="aVg-pa-9JN"/>
+                        <constraint firstItem="vaK-mQ-xOw" firstAttribute="top" secondItem="A5t-n5-beN" secondAttribute="top" id="dqg-WC-tDr"/>
+                        <constraint firstItem="jGr-dx-ia4" firstAttribute="trailing" secondItem="kNx-Em-Aa2" secondAttribute="trailing" id="e1w-Pk-eUF"/>
+                        <constraint firstItem="s9g-LQ-ujN" firstAttribute="left" secondItem="hGK-Ma-fb2" secondAttribute="right" constant="10" id="eWl-ok-fAK"/>
+                        <constraint firstItem="hGK-Ma-fb2" firstAttribute="left" secondItem="y9c-St-dk7" secondAttribute="left" multiplier="1.08" id="fj1-ys-3Jw"/>
+                        <constraint firstItem="vaK-mQ-xOw" firstAttribute="centerX" secondItem="A5t-n5-beN" secondAttribute="centerX" id="h9k-zN-CWN"/>
+                        <constraint firstItem="hGK-Ma-fb2" firstAttribute="top" secondItem="y9c-St-dk7" secondAttribute="bottom" id="iBB-D8-slG"/>
+                        <constraint firstItem="y9c-St-dk7" firstAttribute="centerX" secondItem="A5t-n5-beN" secondAttribute="centerX" id="s9e-IL-ruP"/>
+                        <constraint firstItem="s9g-LQ-ujN" firstAttribute="bottom" secondItem="hGK-Ma-fb2" secondAttribute="bottom" id="vUv-Ad-DaD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Kn3-6W-CaF" firstAttribute="leading" secondItem="A5t-n5-beN" secondAttribute="leading" id="Kis-bZ-GmX"/>
+                <constraint firstItem="A5t-n5-beN" firstAttribute="leading" secondItem="SRY-wd-Qdf" secondAttribute="leading" id="SEG-Tk-Oun"/>
+                <constraint firstAttribute="bottom" secondItem="A5t-n5-beN" secondAttribute="bottom" constant="-2.8421709430404007e-14" id="XBr-WT-OMN"/>
+                <constraint firstAttribute="trailing" secondItem="A5t-n5-beN" secondAttribute="trailing" id="cQ8-4V-EDz"/>
+                <constraint firstItem="A5t-n5-beN" firstAttribute="top" secondItem="SRY-wd-Qdf" secondAttribute="top" id="g5e-kp-dX6"/>
+                <constraint firstItem="Kn3-6W-CaF" firstAttribute="bottom" secondItem="A5t-n5-beN" secondAttribute="bottom" id="k2p-Fg-mVD"/>
+                <constraint firstItem="Kn3-6W-CaF" firstAttribute="trailing" secondItem="A5t-n5-beN" secondAttribute="trailing" id="lmW-CN-Vgd"/>
+                <constraint firstItem="Kn3-6W-CaF" firstAttribute="top" secondItem="A5t-n5-beN" secondAttribute="top" id="z2I-cG-jqq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-1297" y="-129"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_glare" width="309" height="190"/>
+    </resources>
+</document>

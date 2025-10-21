@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavbarView" customModule="Cardlink_Mobile_Payments_SDK" customModuleProvider="target">
+            <connections>
+                <outlet property="leftButton" destination="2cN-j5-Fni" id="P0Q-hX-ERS"/>
+                <outlet property="rightButton" destination="7gw-HW-eO8" id="Gkc-tc-yTN"/>
+                <outlet property="titleLabel" destination="ls8-OX-nuM" id="pPb-bZ-Dn7"/>
+                <outlet property="topConstraint" destination="ibI-19-y8S" id="1AW-At-KDu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0na-ls-M5s">
+                    <rect key="frame" x="0.0" y="0.0" width="454" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6WV-a2-bcp">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cN-j5-Fni">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="2cN-j5-Fni" secondAttribute="trailing" id="U44-6h-dV7"/>
+                                <constraint firstAttribute="width" constant="60" id="VW0-Vi-tLL"/>
+                                <constraint firstItem="2cN-j5-Fni" firstAttribute="top" secondItem="6WV-a2-bcp" secondAttribute="top" id="cR3-kU-fJ3"/>
+                                <constraint firstAttribute="bottom" secondItem="2cN-j5-Fni" secondAttribute="bottom" id="uWx-95-Cj5"/>
+                                <constraint firstItem="2cN-j5-Fni" firstAttribute="leading" secondItem="6WV-a2-bcp" secondAttribute="leading" id="z8Y-oN-afh"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeA-UV-Tfd">
+                            <rect key="frame" x="60" y="0.0" width="334" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls8-OX-nuM">
+                                    <rect key="frame" x="0.0" y="0.0" width="334" height="44"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ls8-OX-nuM" firstAttribute="top" secondItem="xeA-UV-Tfd" secondAttribute="top" id="9iG-b4-ZwT"/>
+                                <constraint firstAttribute="bottom" secondItem="ls8-OX-nuM" secondAttribute="bottom" id="EuT-OW-vxA"/>
+                                <constraint firstAttribute="trailing" secondItem="ls8-OX-nuM" secondAttribute="trailing" id="UeN-h2-fyN"/>
+                                <constraint firstItem="ls8-OX-nuM" firstAttribute="leading" secondItem="xeA-UV-Tfd" secondAttribute="leading" id="bt2-co-rt6"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lP7-j1-eWd">
+                            <rect key="frame" x="394" y="0.0" width="60" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gw-HW-eO8">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="7gw-HW-eO8" secondAttribute="trailing" id="9Ap-AD-rFN"/>
+                                <constraint firstItem="7gw-HW-eO8" firstAttribute="top" secondItem="lP7-j1-eWd" secondAttribute="top" id="PXg-UG-agD"/>
+                                <constraint firstItem="7gw-HW-eO8" firstAttribute="leading" secondItem="lP7-j1-eWd" secondAttribute="leading" id="Pxi-7B-WjA"/>
+                                <constraint firstAttribute="width" constant="60" id="tTZ-Eh-dep"/>
+                                <constraint firstAttribute="bottom" secondItem="7gw-HW-eO8" secondAttribute="bottom" id="x6e-QA-hw9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="lP7-j1-eWd" secondAttribute="trailing" id="DYa-rS-Nm1"/>
+                        <constraint firstItem="xeA-UV-Tfd" firstAttribute="top" secondItem="6WV-a2-bcp" secondAttribute="top" id="Fss-Pn-0tO"/>
+                        <constraint firstItem="xeA-UV-Tfd" firstAttribute="leading" secondItem="6WV-a2-bcp" secondAttribute="trailing" id="Tc3-KJ-Xri"/>
+                        <constraint firstItem="lP7-j1-eWd" firstAttribute="leading" secondItem="xeA-UV-Tfd" secondAttribute="trailing" id="Uif-ww-hLR"/>
+                        <constraint firstAttribute="bottom" secondItem="lP7-j1-eWd" secondAttribute="bottom" id="etR-8g-AWK"/>
+                        <constraint firstAttribute="height" constant="44" id="jfz-F3-Ig9"/>
+                        <constraint firstItem="6WV-a2-bcp" firstAttribute="leading" secondItem="0na-ls-M5s" secondAttribute="leading" id="mCi-cK-U10"/>
+                        <constraint firstAttribute="bottom" secondItem="6WV-a2-bcp" secondAttribute="bottom" id="viw-yD-5Kq"/>
+                        <constraint firstItem="6WV-a2-bcp" firstAttribute="top" secondItem="0na-ls-M5s" secondAttribute="top" id="yNy-P1-2Io"/>
+                        <constraint firstAttribute="bottom" secondItem="xeA-UV-Tfd" secondAttribute="bottom" id="yr7-gv-t5O"/>
+                        <constraint firstItem="lP7-j1-eWd" firstAttribute="top" secondItem="0na-ls-M5s" secondAttribute="top" id="z2x-nr-ofM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0na-ls-M5s" secondAttribute="trailing" id="KSv-qd-Xy5"/>
+                <constraint firstItem="0na-ls-M5s" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RKO-dS-bkm"/>
+                <constraint firstItem="0na-ls-M5s" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ibI-19-y8S"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0na-ls-M5s" secondAttribute="bottom" id="wct-6g-vLl"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="63.75" y="67.5"/>
+        </view>
+    </objects>
+</document>

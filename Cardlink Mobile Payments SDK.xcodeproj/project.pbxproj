@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10B16FB22D6F73F1002CE753 /* Installments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B16FB12D6F73E9002CE753 /* Installments.swift */; };
+		2049DB8807ED2AE02C402002 /* Pods_Cardlink_Mobile_Payments_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749B5EA4ED77532B3E3FDBF2 /* Pods_Cardlink_Mobile_Payments_SDK.framework */; };
+		4D046D6B2932B61D00FEBC09 /* CornerRadiusPercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D046D6A2932B61D00FEBC09 /* CornerRadiusPercentView.swift */; };
+		4D046D6E2933BBE800FEBC09 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D046D6D2933BBE800FEBC09 /* Network.swift */; };
+		4D046D712933BC6200FEBC09 /* AlamoFireNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D046D702933BC6200FEBC09 /* AlamoFireNetwork.swift */; };
+		4D046D752933EA7600FEBC09 /* LibraryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D046D742933EA7600FEBC09 /* LibraryModule.swift */; };
+		4D046D772933EAD300FEBC09 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D046D762933EAD300FEBC09 /* Log.swift */; };
+		4D046D792933EAF700FEBC09 /* SimpleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D046D782933EAF700FEBC09 /* SimpleLog.swift */; };
+		4D1154402938FE94009C7372 /* UserCardsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D11543F2938FE94009C7372 /* UserCardsView.xib */; };
+		4D115442293903C1009C7372 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D115441293903C1009C7372 /* Card.swift */; };
+		4D11544429390524009C7372 /* UserCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D11544329390524009C7372 /* UserCardsView.swift */; };
+		4D11544629394ECF009C7372 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D11544529394ECF009C7372 /* Animations.swift */; };
+		4D11544829395B4F009C7372 /* CardsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D11544729395B4F009C7372 /* CardsResponse.swift */; };
+		4D11544A293973AE009C7372 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D115449293973AE009C7372 /* CardCell.xib */; };
+		4D11544C29397561009C7372 /* AddCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D11544B29397561009C7372 /* AddCardCell.xib */; };
+		4D11544F2939776C009C7372 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D11544E2939776C009C7372 /* CardCell.swift */; };
+		4D115485293A14EC009C7372 /* AddCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D115484293A14EC009C7372 /* AddCardCell.swift */; };
+		4D115487293A1ECB009C7372 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D115486293A1ECB009C7372 /* Formatters.swift */; };
+		4D25CD2A2934AE2700C28163 /* CardValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D25CD292934AE2700C28163 /* CardValidation.swift */; };
+		4D25CD2C2934AE9700C28163 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D25CD2B2934AE9700C28163 /* String+.swift */; };
+		4D25CD2E2934AEC200C28163 /* CardType+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D25CD2D2934AEC200C28163 /* CardType+UI.swift */; };
+		4D25CD302934C19D00C28163 /* Dictionary+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D25CD2F2934C19D00C28163 /* Dictionary+.swift */; };
+		4D25CD342934C48E00C28163 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D25CD332934C48E00C28163 /* Payment.swift */; };
+		4D25CD382934ECEB00C28163 /* UIControl+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D25CD372934ECEB00C28163 /* UIControl+.swift */; };
+		4D25CD432934EE6000C28163 /* anim_ok.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D25CD402934EE6000C28163 /* anim_ok.json */; };
+		4D25CD442934EE6000C28163 /* anim_loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D25CD412934EE6000C28163 /* anim_loader.json */; };
+		4D25CD452934EE6000C28163 /* anim_error.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D25CD422934EE6000C28163 /* anim_error.json */; };
+		4D25CD4729351FD800C28163 /* TransactionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D25CD4629351FD800C28163 /* TransactionStatus.swift */; };
+		4D25CD492935327400C28163 /* TextFieldContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D25CD482935327400C28163 /* TextFieldContainer.swift */; };
+		4D358767293A2DA600414B75 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D358766293A2DA600414B75 /* Button.swift */; };
+		4D358769293A7FCC00414B75 /* TransactionInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D358768293A7FCC00414B75 /* TransactionInternal.swift */; };
+		4D35876B293A80AA00414B75 /* PaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D35876A293A80AA00414B75 /* PaymentResponse.swift */; };
+		4D35876D293A84E700414B75 /* AnimationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D35876C293A84E700414B75 /* AnimationContainer.swift */; };
+		4D35876F293A8BCC00414B75 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D35876E293A8BCC00414B75 /* ErrorMessage.swift */; };
+		4D358771293BBE9900414B75 /* Error+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D358770293BBE9900414B75 /* Error+.swift */; };
+		4D46010428D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4D46010328D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.docc */; };
+		4D46010528D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D46010228D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D46010D28D7AE0F005C55F9 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D46010C28D7AE0F005C55F9 /* MainViewController.xib */; };
+		4D46011228D7AFF0005C55F9 /* NavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D46011028D7AFF0005C55F9 /* NavbarView.swift */; };
+		4D46011328D7AFF0005C55F9 /* NavbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D46011128D7AFF0005C55F9 /* NavbarView.xib */; };
+		4D46011728D7B052005C55F9 /* IBPreviewableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D46011628D7B052005C55F9 /* IBPreviewableView.swift */; };
+		4D46011928D7B108005C55F9 /* ViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D46011828D7B108005C55F9 /* ViewControllerBase.swift */; };
+		4D46011D28D7B4FF005C55F9 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D46011C28D7B4FF005C55F9 /* UIView+.swift */; };
+		4D46011F28D7BB9D005C55F9 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D46011E28D7BB9D005C55F9 /* assets.xcassets */; };
+		4D46012528D7C292005C55F9 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D46012128D7C292005C55F9 /* Roboto-Medium.ttf */; };
+		4D46012628D7C292005C55F9 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D46012228D7C292005C55F9 /* Roboto-Regular.ttf */; };
+		4D46012728D7C292005C55F9 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D46012328D7C292005C55F9 /* Roboto-Bold.ttf */; };
+		4D46012828D7C292005C55F9 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D46012428D7C292005C55F9 /* Roboto-Thin.ttf */; };
+		4D5F709529E731DA00DF83EA /* WebPaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F709429E731DA00DF83EA /* WebPaymentResponse.swift */; };
+		4D5F709729E7321600DF83EA /* WebTransactionInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F709629E7321600DF83EA /* WebTransactionInternal.swift */; };
+		4D60D796292D94130082173B /* KeyboardAvoiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D60D795292D94130082173B /* KeyboardAvoiding.swift */; };
+		4D680D4B29E1E4FB0089C1FC /* SelectMethodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D680D4A29E1E4FB0089C1FC /* SelectMethodViewController.xib */; };
+		4D680D4D29E1EA290089C1FC /* SelectMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D680D4C29E1EA290089C1FC /* SelectMethodViewController.swift */; };
+		4D680D5129E1EE4D0089C1FC /* Button2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D680D5029E1EE4D0089C1FC /* Button2.swift */; };
+		4D680D5329E204D00089C1FC /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D680D5229E204D00089C1FC /* PaymentMethod.swift */; };
+		4D680D5529E2258C0089C1FC /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D680D5429E2258C0089C1FC /* RoundedCornersView.swift */; };
+		4D680D5729E229350089C1FC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D680D5629E229350089C1FC /* Settings.swift */; };
+		4D70B193292D826A00C7E099 /* CardlinkSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70B192292D826A00C7E099 /* CardlinkSDK.swift */; };
+		4DC9685229357183000492E0 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC9685129357183000492E0 /* CardView.xib */; };
+		4DC96854293571CE000492E0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC96853293571CE000492E0 /* CardView.swift */; };
+		4DD4D48029E4BBC900C3693D /* WebPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD4D47F29E4BBC900C3693D /* WebPaymentViewController.xib */; };
+		4DD4D48229E4BBDD00C3693D /* WebPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4D48129E4BBDD00C3693D /* WebPaymentViewController.swift */; };
+		4DD688FD29E2B04C00F2DE66 /* Sequence+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD688FC29E2B04C00F2DE66 /* Sequence+.swift */; };
+		4DD688FF29E2E4CD00F2DE66 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD688FE29E2E4CD00F2DE66 /* Transaction.swift */; };
+		4DD6890129E3133200F2DE66 /* CardlinkSDKDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6890029E3133200F2DE66 /* CardlinkSDKDelegate.swift */; };
+		4DD6890329E31C7C00F2DE66 /* Acquirer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6890229E31C7C00F2DE66 /* Acquirer.swift */; };
+		4DD6890529E36AE400F2DE66 /* Button3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6890429E36AE400F2DE66 /* Button3.swift */; };
+		4DF3AC97292DA3B600C83517 /* CardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF3AC96292DA3B600C83517 /* CardTextField.swift */; };
+		4DF3AC99292DA4B300C83517 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF3AC98292DA4B300C83517 /* UIColor+.swift */; };
+		4DF65A0D29E17A0A00CAC4A0 /* CardPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF65A0C29E17A0A00CAC4A0 /* CardPaymentViewController.xib */; };
+		4DF65A0F29E17A5500CAC4A0 /* CardPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF65A0E29E17A5500CAC4A0 /* CardPaymentViewController.swift */; };
+		4DF65A1129E1835200CAC4A0 /* WKWebview+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF65A1029E1835200CAC4A0 /* WKWebview+.swift */; };
+		4DF65A1429E183B400CAC4A0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF65A1329E183B400CAC4A0 /* Model.swift */; };
+		4DF65A1629E1843100CAC4A0 /* CardUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF65A1529E1843100CAC4A0 /* CardUtil.swift */; };
+		4DFB1AD0292D80D600EBB8F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFB1ACF292D80D600EBB8F2 /* MainViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10B16FB12D6F73E9002CE753 /* Installments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Installments.swift; sourceTree = "<group>"; };
+		4D046D6A2932B61D00FEBC09 /* CornerRadiusPercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusPercentView.swift; sourceTree = "<group>"; };
+		4D046D6D2933BBE800FEBC09 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		4D046D702933BC6200FEBC09 /* AlamoFireNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFireNetwork.swift; sourceTree = "<group>"; };
+		4D046D742933EA7600FEBC09 /* LibraryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModule.swift; sourceTree = "<group>"; };
+		4D046D762933EAD300FEBC09 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		4D046D782933EAF700FEBC09 /* SimpleLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLog.swift; sourceTree = "<group>"; };
+		4D11543F2938FE94009C7372 /* UserCardsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCardsView.xib; sourceTree = "<group>"; };
+		4D115441293903C1009C7372 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		4D11544329390524009C7372 /* UserCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardsView.swift; sourceTree = "<group>"; };
+		4D11544529394ECF009C7372 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		4D11544729395B4F009C7372 /* CardsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsResponse.swift; sourceTree = "<group>"; };
+		4D115449293973AE009C7372 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		4D11544B29397561009C7372 /* AddCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCardCell.xib; sourceTree = "<group>"; };
+		4D11544E2939776C009C7372 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		4D115484293A14EC009C7372 /* AddCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardCell.swift; sourceTree = "<group>"; };
+		4D115486293A1ECB009C7372 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		4D25CD292934AE2700C28163 /* CardValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardValidation.swift; sourceTree = "<group>"; };
+		4D25CD2B2934AE9700C28163 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		4D25CD2D2934AEC200C28163 /* CardType+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardType+UI.swift"; sourceTree = "<group>"; };
+		4D25CD2F2934C19D00C28163 /* Dictionary+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+.swift"; sourceTree = "<group>"; };
+		4D25CD332934C48E00C28163 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		4D25CD372934ECEB00C28163 /* UIControl+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+.swift"; sourceTree = "<group>"; };
+		4D25CD402934EE6000C28163 /* anim_ok.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = anim_ok.json; sourceTree = "<group>"; };
+		4D25CD412934EE6000C28163 /* anim_loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = anim_loader.json; sourceTree = "<group>"; };
+		4D25CD422934EE6000C28163 /* anim_error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = anim_error.json; sourceTree = "<group>"; };
+		4D25CD4629351FD800C28163 /* TransactionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStatus.swift; sourceTree = "<group>"; };
+		4D25CD482935327400C28163 /* TextFieldContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldContainer.swift; sourceTree = "<group>"; };
+		4D358766293A2DA600414B75 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		4D358768293A7FCC00414B75 /* TransactionInternal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInternal.swift; sourceTree = "<group>"; };
+		4D35876A293A80AA00414B75 /* PaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
+		4D35876C293A84E700414B75 /* AnimationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationContainer.swift; sourceTree = "<group>"; };
+		4D35876E293A8BCC00414B75 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		4D358770293BBE9900414B75 /* Error+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+.swift"; sourceTree = "<group>"; };
+		4D4600FF28D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cardlink_Mobile_Payments_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D46010228D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cardlink_Mobile_Payments_SDK.h; sourceTree = "<group>"; };
+		4D46010328D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Cardlink_Mobile_Payments_SDK.docc; sourceTree = "<group>"; };
+		4D46010C28D7AE0F005C55F9 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		4D46011028D7AFF0005C55F9 /* NavbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarView.swift; sourceTree = "<group>"; };
+		4D46011128D7AFF0005C55F9 /* NavbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavbarView.xib; sourceTree = "<group>"; };
+		4D46011628D7B052005C55F9 /* IBPreviewableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBPreviewableView.swift; sourceTree = "<group>"; };
+		4D46011828D7B108005C55F9 /* ViewControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBase.swift; sourceTree = "<group>"; };
+		4D46011C28D7B4FF005C55F9 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		4D46011E28D7BB9D005C55F9 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
+		4D46012128D7C292005C55F9 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		4D46012228D7C292005C55F9 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		4D46012328D7C292005C55F9 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		4D46012428D7C292005C55F9 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		4D5F709429E731DA00DF83EA /* WebPaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPaymentResponse.swift; sourceTree = "<group>"; };
+		4D5F709629E7321600DF83EA /* WebTransactionInternal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebTransactionInternal.swift; sourceTree = "<group>"; };
+		4D60D795292D94130082173B /* KeyboardAvoiding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoiding.swift; sourceTree = "<group>"; };
+		4D680D4A29E1E4FB0089C1FC /* SelectMethodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectMethodViewController.xib; sourceTree = "<group>"; };
+		4D680D4C29E1EA290089C1FC /* SelectMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMethodViewController.swift; sourceTree = "<group>"; };
+		4D680D5029E1EE4D0089C1FC /* Button2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button2.swift; sourceTree = "<group>"; };
+		4D680D5229E204D00089C1FC /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		4D680D5429E2258C0089C1FC /* RoundedCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
+		4D680D5629E229350089C1FC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		4D70B192292D826A00C7E099 /* CardlinkSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardlinkSDK.swift; sourceTree = "<group>"; };
+		4DC9685129357183000492E0 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		4DC96853293571CE000492E0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4DD4D47F29E4BBC900C3693D /* WebPaymentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebPaymentViewController.xib; sourceTree = "<group>"; };
+		4DD4D48129E4BBDD00C3693D /* WebPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPaymentViewController.swift; sourceTree = "<group>"; };
+		4DD688FC29E2B04C00F2DE66 /* Sequence+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+.swift"; sourceTree = "<group>"; };
+		4DD688FE29E2E4CD00F2DE66 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		4DD6890029E3133200F2DE66 /* CardlinkSDKDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardlinkSDKDelegate.swift; sourceTree = "<group>"; };
+		4DD6890229E31C7C00F2DE66 /* Acquirer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acquirer.swift; sourceTree = "<group>"; };
+		4DD6890429E36AE400F2DE66 /* Button3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button3.swift; sourceTree = "<group>"; };
+		4DF3AC96292DA3B600C83517 /* CardTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTextField.swift; sourceTree = "<group>"; };
+		4DF3AC98292DA4B300C83517 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		4DF65A0C29E17A0A00CAC4A0 /* CardPaymentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardPaymentViewController.xib; sourceTree = "<group>"; };
+		4DF65A0E29E17A5500CAC4A0 /* CardPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentViewController.swift; sourceTree = "<group>"; };
+		4DF65A1029E1835200CAC4A0 /* WKWebview+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebview+.swift"; sourceTree = "<group>"; };
+		4DF65A1329E183B400CAC4A0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4DF65A1529E1843100CAC4A0 /* CardUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUtil.swift; sourceTree = "<group>"; };
+		4DFB1ACE292D7D7B00EBB8F2 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		4DFB1ACF292D80D600EBB8F2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		749B5EA4ED77532B3E3FDBF2 /* Pods_Cardlink_Mobile_Payments_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cardlink_Mobile_Payments_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C804DB6ADCCFD5B8C7DACF5 /* Pods-Cardlink Mobile Payments SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cardlink Mobile Payments SDK.debug.xcconfig"; path = "Target Support Files/Pods-Cardlink Mobile Payments SDK/Pods-Cardlink Mobile Payments SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		CA932C9FC30C4B54E84C54B5 /* Pods-Cardlink Mobile Payments SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cardlink Mobile Payments SDK.release.xcconfig"; path = "Target Support Files/Pods-Cardlink Mobile Payments SDK/Pods-Cardlink Mobile Payments SDK.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D4600FC28D7AD96005C55F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2049DB8807ED2AE02C402002 /* Pods_Cardlink_Mobile_Payments_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33CB2252D7D13928FC841A0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				749B5EA4ED77532B3E3FDBF2 /* Pods_Cardlink_Mobile_Payments_SDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D046D6C2933BBDC00FEBC09 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4D046D6F2933BC5600FEBC09 /* Implementation */,
+				4D11544529394ECF009C7372 /* Animations.swift */,
+				4D25CD292934AE2700C28163 /* CardValidation.swift */,
+				10B16FB12D6F73E9002CE753 /* Installments.swift */,
+				4D046D762933EAD300FEBC09 /* Log.swift */,
+				4D046D6D2933BBE800FEBC09 /* Network.swift */,
+				4D115486293A1ECB009C7372 /* Formatters.swift */,
+				4D35876E293A8BCC00414B75 /* ErrorMessage.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4D046D6F2933BC5600FEBC09 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				4D046D702933BC6200FEBC09 /* AlamoFireNetwork.swift */,
+				4D046D782933EAF700FEBC09 /* SimpleLog.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		4D11543E2938FE77009C7372 /* UserCardsView */ = {
+			isa = PBXGroup;
+			children = (
+				4D11544329390524009C7372 /* UserCardsView.swift */,
+				4D11543F2938FE94009C7372 /* UserCardsView.xib */,
+			);
+			path = UserCardsView;
+			sourceTree = "<group>";
+		};
+		4D11544D29397565009C7372 /* Card cells */ = {
+			isa = PBXGroup;
+			children = (
+				4D115484293A14EC009C7372 /* AddCardCell.swift */,
+				4D11544B29397561009C7372 /* AddCardCell.xib */,
+				4D11544E2939776C009C7372 /* CardCell.swift */,
+				4D115449293973AE009C7372 /* CardCell.xib */,
+			);
+			path = "Card cells";
+			sourceTree = "<group>";
+		};
+		4D25CD322934C48100C28163 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4DD6890229E31C7C00F2DE66 /* Acquirer.swift */,
+				4D115441293903C1009C7372 /* Card.swift */,
+				4D11544729395B4F009C7372 /* CardsResponse.swift */,
+				4D25CD332934C48E00C28163 /* Payment.swift */,
+				4D680D5229E204D00089C1FC /* PaymentMethod.swift */,
+				4D35876A293A80AA00414B75 /* PaymentResponse.swift */,
+				4D680D5629E229350089C1FC /* Settings.swift */,
+				4DD688FE29E2E4CD00F2DE66 /* Transaction.swift */,
+				4D358768293A7FCC00414B75 /* TransactionInternal.swift */,
+				4D25CD4629351FD800C28163 /* TransactionStatus.swift */,
+				4D5F709429E731DA00DF83EA /* WebPaymentResponse.swift */,
+				4D5F709629E7321600DF83EA /* WebTransactionInternal.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4D25CD392934EE4C00C28163 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				4D25CD422934EE6000C28163 /* anim_error.json */,
+				4D25CD412934EE6000C28163 /* anim_loader.json */,
+				4D25CD402934EE6000C28163 /* anim_ok.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		4D4600F528D7AD96005C55F9 = {
+			isa = PBXGroup;
+			children = (
+				4D46010128D7AD96005C55F9 /* Cardlink Mobile Payments SDK */,
+				4D46010028D7AD96005C55F9 /* Products */,
+				BB329F0EB2F20CB3932587CF /* Pods */,
+				33CB2252D7D13928FC841A0D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D46010028D7AD96005C55F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D4600FF28D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D46010128D7AD96005C55F9 /* Cardlink Mobile Payments SDK */ = {
+			isa = PBXGroup;
+			children = (
+				4D25CD392934EE4C00C28163 /* Animations */,
+				4D25CD322934C48100C28163 /* Entity */,
+				4D46011B28D7B4F4005C55F9 /* Extension */,
+				4D46012028D7C292005C55F9 /* Fonts */,
+				4D46010E28D7AF94005C55F9 /* Scene */,
+				4D046D6C2933BBDC00FEBC09 /* Util */,
+				4D46010B28D7ADE4005C55F9 /* View */,
+				4D46011E28D7BB9D005C55F9 /* assets.xcassets */,
+				4D46010328D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.docc */,
+				4D46010228D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.h */,
+				4D70B192292D826A00C7E099 /* CardlinkSDK.swift */,
+				4D046D742933EA7600FEBC09 /* LibraryModule.swift */,
+				4DD6890029E3133200F2DE66 /* CardlinkSDKDelegate.swift */,
+			);
+			path = "Cardlink Mobile Payments SDK";
+			sourceTree = "<group>";
+		};
+		4D46010B28D7ADE4005C55F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D11544D29397565009C7372 /* Card cells */,
+				4DC9685029357159000492E0 /* CardView */,
+				4D46010F28D7AFF0005C55F9 /* NavBarView */,
+				4D11543E2938FE77009C7372 /* UserCardsView */,
+				4D35876C293A84E700414B75 /* AnimationContainer.swift */,
+				4D358766293A2DA600414B75 /* Button.swift */,
+				4D680D5029E1EE4D0089C1FC /* Button2.swift */,
+				4DD6890429E36AE400F2DE66 /* Button3.swift */,
+				4DF3AC96292DA3B600C83517 /* CardTextField.swift */,
+				4D046D6A2932B61D00FEBC09 /* CornerRadiusPercentView.swift */,
+				4D46011628D7B052005C55F9 /* IBPreviewableView.swift */,
+				4D60D795292D94130082173B /* KeyboardAvoiding.swift */,
+				4D25CD482935327400C28163 /* TextFieldContainer.swift */,
+				4D680D5429E2258C0089C1FC /* RoundedCornersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D46010E28D7AF94005C55F9 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				4D46011A28D7B27D005C55F9 /* Payment */,
+				4D46011828D7B108005C55F9 /* ViewControllerBase.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		4D46010F28D7AFF0005C55F9 /* NavBarView */ = {
+			isa = PBXGroup;
+			children = (
+				4D46011028D7AFF0005C55F9 /* NavbarView.swift */,
+				4D46011128D7AFF0005C55F9 /* NavbarView.xib */,
+			);
+			path = NavBarView;
+			sourceTree = "<group>";
+		};
+		4D46011A28D7B27D005C55F9 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				4DD4D47E29E4BB4E00C3693D /* Web */,
+				4D680D4929E1E49D0089C1FC /* Card */,
+				4DF65A0B29E179F800CAC4A0 /* Select Method */,
+				4DFB1ACF292D80D600EBB8F2 /* MainViewController.swift */,
+				4D46010C28D7AE0F005C55F9 /* MainViewController.xib */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		4D46011B28D7B4F4005C55F9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D25CD2D2934AEC200C28163 /* CardType+UI.swift */,
+				4D25CD2F2934C19D00C28163 /* Dictionary+.swift */,
+				4D358770293BBE9900414B75 /* Error+.swift */,
+				4DD688FC29E2B04C00F2DE66 /* Sequence+.swift */,
+				4D25CD2B2934AE9700C28163 /* String+.swift */,
+				4DF3AC98292DA4B300C83517 /* UIColor+.swift */,
+				4D25CD372934ECEB00C28163 /* UIControl+.swift */,
+				4D46011C28D7B4FF005C55F9 /* UIView+.swift */,
+				4DF65A1029E1835200CAC4A0 /* WKWebview+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4D46012028D7C292005C55F9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4D46012328D7C292005C55F9 /* Roboto-Bold.ttf */,
+				4DFB1ACE292D7D7B00EBB8F2 /* Roboto-Italic.ttf */,
+				4D46012128D7C292005C55F9 /* Roboto-Medium.ttf */,
+				4D46012228D7C292005C55F9 /* Roboto-Regular.ttf */,
+				4D46012428D7C292005C55F9 /* Roboto-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4D680D4929E1E49D0089C1FC /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				4DF65A0E29E17A5500CAC4A0 /* CardPaymentViewController.swift */,
+				4DF65A0C29E17A0A00CAC4A0 /* CardPaymentViewController.xib */,
+				4DF65A1529E1843100CAC4A0 /* CardUtil.swift */,
+				4DF65A1329E183B400CAC4A0 /* Model.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		4DC9685029357159000492E0 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				4DC96853293571CE000492E0 /* CardView.swift */,
+				4DC9685129357183000492E0 /* CardView.xib */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		4DD4D47E29E4BB4E00C3693D /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				4DD4D48129E4BBDD00C3693D /* WebPaymentViewController.swift */,
+				4DD4D47F29E4BBC900C3693D /* WebPaymentViewController.xib */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		4DF65A0B29E179F800CAC4A0 /* Select Method */ = {
+			isa = PBXGroup;
+			children = (
+				4D680D4C29E1EA290089C1FC /* SelectMethodViewController.swift */,
+				4D680D4A29E1E4FB0089C1FC /* SelectMethodViewController.xib */,
+			);
+			path = "Select Method";
+			sourceTree = "<group>";
+		};
+		BB329F0EB2F20CB3932587CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C804DB6ADCCFD5B8C7DACF5 /* Pods-Cardlink Mobile Payments SDK.debug.xcconfig */,
+				CA932C9FC30C4B54E84C54B5 /* Pods-Cardlink Mobile Payments SDK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4D4600FA28D7AD96005C55F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D46010528D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4D4600FE28D7AD96005C55F9 /* Cardlink Mobile Payments SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D46010828D7AD96005C55F9 /* Build configuration list for PBXNativeTarget "Cardlink Mobile Payments SDK" */;
+			buildPhases = (
+				47EB474DE8EAD01BF7F392FB /* [CP] Check Pods Manifest.lock */,
+				4D4600FA28D7AD96005C55F9 /* Headers */,
+				4D4600FB28D7AD96005C55F9 /* Sources */,
+				4D4600FC28D7AD96005C55F9 /* Frameworks */,
+				4D4600FD28D7AD96005C55F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cardlink Mobile Payments SDK";
+			productName = "Cardlink Mobile Payments SDK";
+			productReference = 4D4600FF28D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D4600F628D7AD96005C55F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					4D4600FE28D7AD96005C55F9 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 4D4600F928D7AD96005C55F9 /* Build configuration list for PBXProject "Cardlink Mobile Payments SDK" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D4600F528D7AD96005C55F9;
+			productRefGroup = 4D46010028D7AD96005C55F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D4600FE28D7AD96005C55F9 /* Cardlink Mobile Payments SDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D4600FD28D7AD96005C55F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D46012828D7C292005C55F9 /* Roboto-Thin.ttf in Resources */,
+				4D25CD452934EE6000C28163 /* anim_error.json in Resources */,
+				4D46012528D7C292005C55F9 /* Roboto-Medium.ttf in Resources */,
+				4D25CD432934EE6000C28163 /* anim_ok.json in Resources */,
+				4D46011328D7AFF0005C55F9 /* NavbarView.xib in Resources */,
+				4D11544C29397561009C7372 /* AddCardCell.xib in Resources */,
+				4DD4D48029E4BBC900C3693D /* WebPaymentViewController.xib in Resources */,
+				4DF65A0D29E17A0A00CAC4A0 /* CardPaymentViewController.xib in Resources */,
+				4D46012728D7C292005C55F9 /* Roboto-Bold.ttf in Resources */,
+				4D46012628D7C292005C55F9 /* Roboto-Regular.ttf in Resources */,
+				4D11544A293973AE009C7372 /* CardCell.xib in Resources */,
+				4DC9685229357183000492E0 /* CardView.xib in Resources */,
+				4D25CD442934EE6000C28163 /* anim_loader.json in Resources */,
+				4D1154402938FE94009C7372 /* UserCardsView.xib in Resources */,
+				4D46010D28D7AE0F005C55F9 /* MainViewController.xib in Resources */,
+				4D46011F28D7BB9D005C55F9 /* assets.xcassets in Resources */,
+				4D680D4B29E1E4FB0089C1FC /* SelectMethodViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47EB474DE8EAD01BF7F392FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cardlink Mobile Payments SDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D4600FB28D7AD96005C55F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D680D5129E1EE4D0089C1FC /* Button2.swift in Sources */,
+				4D25CD382934ECEB00C28163 /* UIControl+.swift in Sources */,
+				4DFB1AD0292D80D600EBB8F2 /* MainViewController.swift in Sources */,
+				4D25CD302934C19D00C28163 /* Dictionary+.swift in Sources */,
+				4D046D712933BC6200FEBC09 /* AlamoFireNetwork.swift in Sources */,
+				4D046D772933EAD300FEBC09 /* Log.swift in Sources */,
+				4DD6890129E3133200F2DE66 /* CardlinkSDKDelegate.swift in Sources */,
+				4D11544429390524009C7372 /* UserCardsView.swift in Sources */,
+				4D46011228D7AFF0005C55F9 /* NavbarView.swift in Sources */,
+				4D046D6E2933BBE800FEBC09 /* Network.swift in Sources */,
+				4D46011D28D7B4FF005C55F9 /* UIView+.swift in Sources */,
+				4D11544F2939776C009C7372 /* CardCell.swift in Sources */,
+				4DD688FD29E2B04C00F2DE66 /* Sequence+.swift in Sources */,
+				4DD6890529E36AE400F2DE66 /* Button3.swift in Sources */,
+				4DF65A0F29E17A5500CAC4A0 /* CardPaymentViewController.swift in Sources */,
+				4D25CD2A2934AE2700C28163 /* CardValidation.swift in Sources */,
+				4D5F709729E7321600DF83EA /* WebTransactionInternal.swift in Sources */,
+				4DD4D48229E4BBDD00C3693D /* WebPaymentViewController.swift in Sources */,
+				4DD688FF29E2E4CD00F2DE66 /* Transaction.swift in Sources */,
+				4D046D792933EAF700FEBC09 /* SimpleLog.swift in Sources */,
+				4D5F709529E731DA00DF83EA /* WebPaymentResponse.swift in Sources */,
+				4D115442293903C1009C7372 /* Card.swift in Sources */,
+				4D11544829395B4F009C7372 /* CardsResponse.swift in Sources */,
+				4D358769293A7FCC00414B75 /* TransactionInternal.swift in Sources */,
+				4D25CD4729351FD800C28163 /* TransactionStatus.swift in Sources */,
+				4D115485293A14EC009C7372 /* AddCardCell.swift in Sources */,
+				4D680D4D29E1EA290089C1FC /* SelectMethodViewController.swift in Sources */,
+				4D046D752933EA7600FEBC09 /* LibraryModule.swift in Sources */,
+				4D60D796292D94130082173B /* KeyboardAvoiding.swift in Sources */,
+				4D25CD2E2934AEC200C28163 /* CardType+UI.swift in Sources */,
+				4DF65A1429E183B400CAC4A0 /* Model.swift in Sources */,
+				4D46011928D7B108005C55F9 /* ViewControllerBase.swift in Sources */,
+				4D70B193292D826A00C7E099 /* CardlinkSDK.swift in Sources */,
+				4D358771293BBE9900414B75 /* Error+.swift in Sources */,
+				4D680D5329E204D00089C1FC /* PaymentMethod.swift in Sources */,
+				4D25CD2C2934AE9700C28163 /* String+.swift in Sources */,
+				4D46011728D7B052005C55F9 /* IBPreviewableView.swift in Sources */,
+				4D11544629394ECF009C7372 /* Animations.swift in Sources */,
+				4D35876B293A80AA00414B75 /* PaymentResponse.swift in Sources */,
+				4D115487293A1ECB009C7372 /* Formatters.swift in Sources */,
+				4D680D5729E229350089C1FC /* Settings.swift in Sources */,
+				4D35876D293A84E700414B75 /* AnimationContainer.swift in Sources */,
+				4D25CD342934C48E00C28163 /* Payment.swift in Sources */,
+				10B16FB22D6F73F1002CE753 /* Installments.swift in Sources */,
+				4DF65A1629E1843100CAC4A0 /* CardUtil.swift in Sources */,
+				4DF65A1129E1835200CAC4A0 /* WKWebview+.swift in Sources */,
+				4DD6890329E31C7C00F2DE66 /* Acquirer.swift in Sources */,
+				4D680D5529E2258C0089C1FC /* RoundedCornersView.swift in Sources */,
+				4D46010428D7AD96005C55F9 /* Cardlink_Mobile_Payments_SDK.docc in Sources */,
+				4DC96854293571CE000492E0 /* CardView.swift in Sources */,
+				4D046D6B2932B61D00FEBC09 /* CornerRadiusPercentView.swift in Sources */,
+				4D25CD492935327400C28163 /* TextFieldContainer.swift in Sources */,
+				4DF3AC97292DA3B600C83517 /* CardTextField.swift in Sources */,
+				4DF3AC99292DA4B300C83517 /* UIColor+.swift in Sources */,
+				4D35876F293A8BCC00414B75 /* ErrorMessage.swift in Sources */,
+				4D358767293A2DA600414B75 /* Button.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4D46010628D7AD96005C55F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D46010728D7AD96005C55F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4D46010928D7AD96005C55F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C804DB6ADCCFD5B8C7DACF5 /* Pods-Cardlink Mobile Payments SDK.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LDUKG655Z5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cardlink.mobile-sdk.ios";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D46010A28D7AD96005C55F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA932C9FC30C4B54E84C54B5 /* Pods-Cardlink Mobile Payments SDK.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LDUKG655Z5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cardlink.mobile-sdk.ios";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D4600F928D7AD96005C55F9 /* Build configuration list for PBXProject "Cardlink Mobile Payments SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D46010628D7AD96005C55F9 /* Debug */,
+				4D46010728D7AD96005C55F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D46010828D7AD96005C55F9 /* Build configuration list for PBXNativeTarget "Cardlink Mobile Payments SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D46010928D7AD96005C55F9 /* Debug */,
+				4D46010A28D7AD96005C55F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D4600F628D7AD96005C55F9 /* Project object */;
+}
